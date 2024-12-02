@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="icon" href="images/product-01.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Navbar Styles */
+        .navbar {
+            top: 0;
+            right: 0;
+            left: 0;
+            background: linear-gradient(90deg, #f79d00, #fbcaff);    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            padding: 1.4rem 7%;
+            z-index: 999;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar img {
+            height: 40px;
+            width: auto;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        /* Page Content Styles */
+        .container {
+            padding-top: 120px; /* Offset content from navbar */
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 40px;
+        }
+
+        /* Card Styles */
+        .card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Image Styles */
+        .card-img-top {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        /* Zoom effect on image hover */
+        .card-img-top:hover {
+            transform: scale(1.1);
+        }
+
+        /* Card Body Styles */
+        .card-body {
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #f79d00;
+            margin-bottom: 15px;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: linear-gradient(90deg, #f79d00, #fbcaff);    
+            padding:  0; /* Increased the padding for a taller footer */
+            color: #fff;
+            text-align: center;
+            font-size: 1.2rem; /* Increased font size for better readability */
+            margin-top: 4%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px; /* Increased spacing between links */
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+
+            .container {
+                padding-top: 180px; /* Increased offset for smaller screens */
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .card-img-top {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <img src="/images/logo1111.png" alt="Shweth Logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Our Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/product-01.jpg" class="card-img-top" alt="Idli">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Idli Batter</h5>
+                        <p class="card-text">Our Idli batter is crafted with the finest ingredients, ensuring soft and fluffy Idlis every time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/product-06.jpg" class="card-img-top" alt="Dosa">
+                    <div class="card-body">
+                        <h5 class="card-title">Authentic Dosa Batter</h5>
+                        <p class="card-text">Enjoy crispy and golden Dosas with our perfect Dosa batter, made to deliver the best texture and taste.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/product-08.jpg" class="card-img-top" alt="Vada">
+                    <div class="card-body">
+                        <h5 class="card-title">Medu Vada Batter</h5>
+                        <p class="card-text">Our Medu Vada batter is designed to give you crispy and delicious Vadas, perfect for any meal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <img src="/images/logo1111.png" alt="Shweth Logo" style="height: 100px; width: auto; margin: auto;">
+
+        <div class="share">
+            <a href="https://www.facebook.com/profile.php?id=61552864778211&mibextid=ZbWKwL" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/mysudhamrit/" class="fab fa-instagram"></a>
+            <a href="https://www.youtube.com/@sritaramamission" class="fab fa-youtube"></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
